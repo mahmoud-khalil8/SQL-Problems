@@ -1,0 +1,1 @@
+SELECT DISTINCT CITY FROM STATION WHERE SUBSTR(CITY,LENGTH(CITY),1) in('a','e','o','u','i') AND LOWER(SUBSTR(CITY,1,1)) in('a','e','o','u','i');      
