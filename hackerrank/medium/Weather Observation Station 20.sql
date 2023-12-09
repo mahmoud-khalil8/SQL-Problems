@@ -1,0 +1,1 @@
+select round( lat_n,4) from ( select lat_n ,row_number()over(order by lat_n) as rn from station   ) as r    where rn =(select round(count(*)/2) from station);
